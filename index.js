@@ -11,6 +11,11 @@ function nestedTarget() {
   }
 }
 
+function deepestChild() {
+  let deepest = document.getElementById('grand-node').querySelectorAll('div')
+  return deepest[deepest.length-1]
+}
+
 function increaseRankBy(n) {
   let rank = document.querySelectorAll('ul.ranked-list li')
   for (let i=0; i<rank.length; i++) {
