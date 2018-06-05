@@ -3,5 +3,5 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.getElementById('#nested').get
+  return document.getElementById('#nested').getElementByClass
 }
