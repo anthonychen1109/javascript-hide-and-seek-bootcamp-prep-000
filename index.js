@@ -3,5 +3,8 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  return document.getElementById('#nested').target
+  let nested = document.getElementById('#nested').target
+  for (i=0; i<nested.length; i++) {
+    
+  }
 }
