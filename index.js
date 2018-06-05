@@ -10,3 +10,7 @@ function nestedTarget() {
     }
   }
 }
+
+function increaseByRank(n) {
+  let rank = document.getElementByClassName('ranked-list')
+}
