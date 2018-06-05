@@ -3,8 +3,10 @@ function getFirstSelector(selector) {
 }
 
 function nestedTarget() {
-  let nested = document.querySelectorAll('div')
+  let nested = document.getElementById('nested').querySelectorAll('div')
   for (let i=0; i<nested.length; i++) {
-    return document.getElementByClassName('target')
+    if (nested[i].classList.contains('target')) {
+      return nested[i]
+    }
   }
 }
